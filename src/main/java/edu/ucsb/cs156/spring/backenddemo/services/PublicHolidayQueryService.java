@@ -2,6 +2,7 @@ package edu.ucsb.cs156.spring.backenddemo.services;
 
 import java.util.List;
 import java.util.Map;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.springframework.web.client.RestTemplate;
 
@@ -25,7 +26,7 @@ import org.springframework.web.client.HttpClientErrorException;
 @Service
 public class PublicHolidayQueryService {
 
-
+    ObjectMapper mapper = new ObjectMapper();
     private final RestTemplate restTemplate;
 
     public PublicHolidayQueryService(RestTemplateBuilder restTemplateBuilder) {
