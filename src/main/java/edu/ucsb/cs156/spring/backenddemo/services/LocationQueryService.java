@@ -14,6 +14,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
+//import org.apache.commons.httpclient.util.URIUtil.encodeQuery; tryng to fix URI escape
+
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -29,7 +31,12 @@ public class LocationQueryService {
     public static final String ENDPOINT = "https://nominatim.openstreetmap.org/search/{location}?format=json";
 
     public String getJSON(String location) throws HttpClientErrorException {
-        /* 
+        //turn the space into %20
+        //location = Uri.encode(location);
+
+        //turning space into %20 rudimentary method
+        //location = location.replaceAll(" ","%20");
+
         log.info("location={}", location);
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(List.of(MediaType.APPLICATION_JSON));
@@ -41,7 +48,7 @@ public class LocationQueryService {
 
         ResponseEntity<String> re = restTemplate.exchange(ENDPOINT, HttpMethod.GET, entity, String.class,
                 uriVariables);
-        return re.getBody(); */
-        return "";
+        return re.getBody(); 
+        
     }
 }
