@@ -31,7 +31,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
     @Operation(summary = &quot;Get universities data list&quot;)
     @GetMapping(&quot;/get&quot;)
     public ResponseEntity&lt;String&gt; getUniversities(
-        @Parameter(description = &quot;name to filter by, e.g. California&quot;) @RequestParam String name
+        @Parameter(name=&quot;name&quot;, description = &quot;name to filter by, e.g. Stanford&quot;, example=&quot;Stanford&quot;) @RequestParam String name
         )  throws JsonProcessingException {
 <span class="fc" id="L36">        String result = universityQueryService.getJSON(name);</span>
 <span class="fc" id="L37">        return ResponseEntity.ok().body(result);</span>
