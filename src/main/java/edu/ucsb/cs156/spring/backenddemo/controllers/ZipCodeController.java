@@ -30,7 +30,7 @@ public class ZipCodeController {
     @Operation(summary = "Get information about a us zipcode")
     @GetMapping("/get")
     public ResponseEntity<String> getZipcodes(
-        @Parameter(name="zipcode", description="US zipcode, e.g. 93106", example="zipcode - US zipcode, e.g. 93106") @RequestParam String zipcode
+        @Parameter(name="zipcode", description="US zipcode, e.g. 93106", example="93106") @RequestParam String zipcode
     ) throws JsonProcessingException {
         log.info("getZipcodes: zipcode={}", zipcode);
         String result = zipCodeQueryService.getJSON(zipcode);
