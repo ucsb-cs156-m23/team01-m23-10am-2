@@ -31,7 +31,7 @@ public class UniversityController {
     @Operation(summary = "Get universities data list")
     @GetMapping("/get")
     public ResponseEntity<String> getUniversities(
-        @Parameter(description = "name to filter by, e.g. California") @RequestParam String name
+        @Parameter(name="name", description = "name to filter by, e.g. Stanford", example="Stanford") @RequestParam String name
         )  throws JsonProcessingException {
         String result = universityQueryService.getJSON(name);
         return ResponseEntity.ok().body(result);
