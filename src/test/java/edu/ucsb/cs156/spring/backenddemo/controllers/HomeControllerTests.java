@@ -50,7 +50,7 @@ public class HomeControllerTests {
 
         List<String> team = new ArrayList<String>();
         team.add("Joshua Z.");
-        team.add("Cyrus G.");
+        team.add("Cyrus C.");
         team.add("Kirill A.");
         team.add("Rocky G.");
         resultMap.put("team",team);
