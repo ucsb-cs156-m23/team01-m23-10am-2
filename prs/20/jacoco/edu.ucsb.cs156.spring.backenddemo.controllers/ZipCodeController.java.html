@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import edu.ucsb.cs156.spring.backenddemo.services.EarthquakeQueryService;
 import edu.ucsb.cs156.spring.backenddemo.services.ZipCodeQueryService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -19,11 +18,11 @@ import lombok.extern.slf4j.Slf4j;
 
 
 @Tag(name=&quot;Zip Code Information from http://www.zippopotam.us/&quot;)
-<span class="fc" id="L22">@Slf4j</span>
+<span class="fc" id="L21">@Slf4j</span>
 @RestController
 @RequestMapping(&quot;/api/zipcodes&quot;)
-<span class="fc" id="L25">public class ZipCodeController {</span>
-<span class="fc" id="L26">    ObjectMapper mapper = new ObjectMapper();</span>
+<span class="fc" id="L24">public class ZipCodeController {</span>
+<span class="fc" id="L25">    ObjectMapper mapper = new ObjectMapper();</span>
 
     @Autowired
     ZipCodeQueryService zipCodeQueryService;
@@ -33,9 +32,9 @@ import lombok.extern.slf4j.Slf4j;
     public ResponseEntity&lt;String&gt; getZipcodes(
         @Parameter(name=&quot;zipcode&quot;, description=&quot;US zipcode, e.g. 93106&quot;, example=&quot;zipcode - US zipcode, e.g. 93106&quot;) @RequestParam String zipcode
     ) throws JsonProcessingException {
-<span class="fc" id="L36">        log.info(&quot;getZipcodes: zipcode={}&quot;, zipcode);</span>
-<span class="fc" id="L37">        String result = zipCodeQueryService.getJSON(zipcode);</span>
-<span class="fc" id="L38">        return ResponseEntity.ok().body(result);</span>
+<span class="fc" id="L35">        log.info(&quot;getZipcodes: zipcode={}&quot;, zipcode);</span>
+<span class="fc" id="L36">        String result = zipCodeQueryService.getJSON(zipcode);</span>
+<span class="fc" id="L37">        return ResponseEntity.ok().body(result);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
