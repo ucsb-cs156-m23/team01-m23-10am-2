@@ -30,7 +30,7 @@ import lombok.extern.slf4j.Slf4j;
     @Operation(summary = &quot;Get information about a us zipcode&quot;)
     @GetMapping(&quot;/get&quot;)
     public ResponseEntity&lt;String&gt; getZipcodes(
-        @Parameter(name=&quot;zipcode&quot;, description=&quot;US zipcode, e.g. 93106&quot;, example=&quot;zipcode - US zipcode, e.g. 93106&quot;) @RequestParam String zipcode
+        @Parameter(name=&quot;zipcode&quot;, description=&quot;US zipcode, e.g. 93106&quot;, example=&quot;93106&quot;) @RequestParam String zipcode
     ) throws JsonProcessingException {
 <span class="fc" id="L35">        log.info(&quot;getZipcodes: zipcode={}&quot;, zipcode);</span>
 <span class="fc" id="L36">        String result = zipCodeQueryService.getJSON(zipcode);</span>
