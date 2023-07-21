@@ -23,4 +23,4 @@ repo_name: "TBD"
 repo: ucsb-cs156-m23/team01-m23-10am-2
 owner: ucsb-cs156-m23
 repo_name: team01-m23-10am-2
-pull_requests: [{"author":{"id":"U_kgDOBXyOow","is_bot":false,"login":"rockygao2020","name":"Rocky Gao"},"headRefName":"Rocky-READMEFixes","number":23,"title":"Update README.md (step 3.3)","url":"https://github.com/ucsb-cs156-m23/team01-m23-10am-2/pull/23"},{"author":{"id":"U_kgDOBh3zbg","is_bot":false,"login":"jczhou02","name":"Joshua Zhou"},"headRefName":"Josh-HomeController","number":22,"title":"JZ - added Home Controller + test compiles and runs successfully","url":"https://github.com/ucsb-cs156-m23/team01-m23-10am-2/pull/22"}]
+pull_requests: [{"author":{"id":"U_kgDOBXyOow","is_bot":false,"login":"rockygao2020","name":"Rocky Gao"},"headRefName":"Rocky-READMEFixes","number":23,"title":"Update README.md (step 3.3)","url":"https://github.com/ucsb-cs156-m23/team01-m23-10am-2/pull/23"}]
