@@ -1,38 +1,20 @@
-# STARTER-team01
+# team01-m23-10am-2
 
 Lab instructions: <https://ucsb-cs156.github.io/m23/lab/team01/>
 
-* TODO: Update the following table, then delete this line that says "TODO".
-
 ```
-|   Name    | GitHub Id |  Service                    | Controller                |
-|-----------|-----------|-----------------------------|---------------------------| 
-|           |           | `LocationQueryService`      | `LocationController`      |   
-|           |           | `PublicHolidayQueryService` | `PublicHolidayController` |   
-|           |           | `TidesQueryService`         | `TidesController`         |   
-|           |           | `UniversityQueryService`    | `UniversityController`    |
-|           |           | `ZipCodeQueryService`       | `ZipCodeController`       |
+|   Name        | GitHub Id     |  Service                    | Controller                |
+|---------------|---------------|-----------------------------|---------------------------| 
+| Rocky Gao     | rockygao2020  | `LocationQueryService`      | `LocationController`      |   
+| Joshua Zhou   | jczhou02      | `PublicHolidayQueryService` | `PublicHolidayController` |   
+|               |               | `TidesQueryService`         | `TidesController`         |   
+| Cyrus Chamlou | cyrus895      | `UniversityQueryService`    | `UniversityController`    |
+| Kirill        | kirrarista    | `ZipCodeQueryService`       | `ZipCodeController`       |
 ```
 
+Repo: https://github.com/ucsb-cs156-m23/team01-m23-10am-2
 
-* TODO: Change the title of this README 
-  in the text `# STARTER-team01` above
-  to match the name of your repo, i. e., `m23-5pm-2-team01`, then delete
-  this TODO item.
-
-* TODO: Correct the links to repo below, 
-  then delete this TODO.  Replace it with 
-  a link to your repo, e.g. 
-  https://github.com/ucsb-cs156-m23/m23-5pm-2-team01
-
-Repo: https://ucsb-cs156-m23/STARTER-team01
-
-* TODO: Correct the links to app on Dokku below, 
-  then delete this TODO.  Replace it with 
-  a link to your running app on Dokku, e.g.
-  https://team01.dokku-00.cs.ucsb.edu
-
-On Heroku: https://team01.dokku-00.cs.ucsb.edu
+On Heroku: https://team01.dokku-05.cs.ucsb.edu
 
 ## About this repo
 
